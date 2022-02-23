@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Convert Me</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="top">
+        <img src="symbol.jpg" alt="">
+        <!-- <h1>Content</h1> -->
+    </div>
+
+    <div class="convert">
+        <h1>Convert Me</h1>
+
+        <form id="form" onsubmit="convertTemp(); return false">
+            <label for="">Enter temperature value you want to convert!</label>
+            <br>
+            <br>
+            <input type="number" name="temperature" id="temperature">
+            
+            <select name="option" id="tempoption">
+                <option value="Celcius">Celcius</option>
+                <option value="Fahrenhite">Fahrenheit</option>
+            </select>
+            <br>
+            <br>
+            <input class="submitButton" type="submit" value="Convert">
+            <br>
+            <br>
+            <label id="result"></label>
+        </form>
+    </div>
+</body>
+</html>
